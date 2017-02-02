@@ -1,0 +1,20 @@
+
+run:
+My Balloon1 redBalloon has an altitude of 100 meters
+
+My Balloon2 blueBalloon has an altitude of 0 meters
+
+My Balloon1 redBalloon has now an altitude of 250 meters
+
+My Balloon2 blueBalloon has now an altitude of 150 meters
+
+My Balloon1 redBalloon has now an altitude of 100 meters
+
+My Balloon1 redBalloon is now at 150 meters
+
+My Balloon2 blueBalloon is now at 150 meters
+
+My Balloon1 redBalloon is now at 600 meters
+
+My Balloon2 blueBalloon is now at 0 meters
+BUILD SUCCESSFUL (total time: 0 seconds)

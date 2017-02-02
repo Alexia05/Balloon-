@@ -65,7 +65,7 @@ public class BalloonTest {
         //move object 1 to 4 times its altitude
         int anotherAlt;
         anotherAlt = Balloon1.getAltitude();
-                
+
         Balloon1.ascendTo(anotherAlt * 4);
 
         System.out.println("\nMy Balloon1 " + Balloon1.getName()
