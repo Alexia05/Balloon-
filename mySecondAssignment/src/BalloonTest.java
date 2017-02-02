@@ -13,10 +13,11 @@ public class BalloonTest {
      */
     public static void main(String[] args) {
 
-        //call a constructor 
+        //creating balloon objects
         Balloon Balloon1 = new Balloon("redBalloon", 100);
         Balloon Balloon2 = new Balloon("blueBalloon", -50);
 
+        //getting the names and altitudes of each balloon
         String name;
         int altitude;
 
@@ -30,10 +31,10 @@ public class BalloonTest {
                 + " has an altitude of " + Balloon2.getAltitude()
                 + " meters");
 
-        //object 1  ascend 
+        //object 1 ascend 
         Balloon1.ascendTo(250);
 
-        //object 2 adjust atitude 
+        //object 2 adjust atitude increasing
         Balloon2.adjustAltitude(150);
 
         System.out.println("\nMy Balloon1 " + Balloon1.getName()
@@ -43,23 +44,29 @@ public class BalloonTest {
                 + " has now an altitude of " + Balloon2.getAltitude()
                 + " meters");
 
-        //object 1 decrease
+        //object 1 adjust altitude decreasing
         Balloon1.adjustAltitude(-150);
 
         System.out.println("\nMy Balloon1 " + Balloon1.getName()
                 + " has now an altitude of " + Balloon1.getAltitude() + " meters");
 
-        //object 2 ascend to object 1
+        //object 1 ascend to the same altitude of object 2
         int alt1;
-        alt1 = Balloon1.getAltitude();
+        alt1 = Balloon2.getAltitude();
 
-        Balloon2.ascendTo(alt1);
+        Balloon1.ascendTo(alt1);
+
+        System.out.println("\nMy Balloon1 " + Balloon1.getName()
+                + " is now at " + Balloon1.getAltitude() + " meters");
 
         System.out.println("\nMy Balloon2 " + Balloon2.getName()
                 + " is now at " + Balloon2.getAltitude() + " meters");
 
         //move object 1 to 4 times its altitude
-        Balloon1.ascendTo(alt1 * 4);
+        int anotherAlt;
+        anotherAlt = Balloon1.getAltitude();
+                
+        Balloon1.ascendTo(anotherAlt * 4);
 
         System.out.println("\nMy Balloon1 " + Balloon1.getName()
                 + " is now at " + Balloon1.getAltitude() + " meters");
